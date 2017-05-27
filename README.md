@@ -27,7 +27,7 @@ Please wait. Getting information.
 Your friends online:
 1. Pavel Durov
 ```
-
+Launching on win ois same.
 # Project Goals
 
 The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
