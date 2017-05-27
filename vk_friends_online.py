@@ -24,19 +24,17 @@ def get_online_friends(login, password):
     )
     api = vk.API(session)
     online_friends_ids = api.friends.getOnline()
-    online_friends_list = []
-    for user in online_friends_ids:
-        first_name = api.users.get(user_ids=user)[0]['first_name']
-        last_name = api.users.get(user_ids=user)[0]['last_name']
-        online_friends_list.append(first_name + ' ' + last_name)
-        time.sleep(0.7)
-    return online_friends_list
+    friends_online = api.users.get(user_ids=online_friends_ids,
+                                   fields=['last_name', 'first_name'])
+    return friends_online
 
 
 def output_friends_to_console(friends_online):
-    print('Your friends online:')
+    print('\nYour friends online:')
     for friend_number, friend in enumerate(friends_online, 1):
-        print('{}. {}'.format(friend_number, friend))
+        print('{}. {} {}'.format(friend_number,
+                                 friend.get('first_name'),
+                                 friend.get('last_name')))
 
 
 if __name__ == '__main__':
