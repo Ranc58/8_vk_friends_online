@@ -1,6 +1,6 @@
 # Watcher of Friends Online
 
-[TODO. There will be project description]
+This program print list of Your friends online on [vk.com](https://vk.com)
 
 # How to Install
 
@@ -10,7 +10,23 @@ Python 3 should be already installed. Then use pip (or pip3 if there is a confli
 pip install -r requirements.txt # alternatively try pip3
 ```
 
+
 Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclopedia/pip/pip_virtualenv/) for better isolation.
+
+#Quick launch
+
+
+**Attention! Your password will not be displayed as you type for security reasons!**
+
+Launching on Linux:
+```#!bash
+$ python bars.py 
+Please enter login: <Your login>
+Please enter password: <Your password>
+Please wait. Getting information.
+Your friends online:
+1. Pavel Durov
+```
 
 # Project Goals
 
