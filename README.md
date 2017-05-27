@@ -13,7 +13,7 @@ pip install -r requirements.txt # alternatively try pip3
 
 Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclopedia/pip/pip_virtualenv/) for better isolation.
 
-#Quick launch
+# Quick launch
 
 
 **Attention! Your password will not be displayed as you type for security reasons!**
