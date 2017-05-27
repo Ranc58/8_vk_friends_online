@@ -40,7 +40,6 @@ def output_friends_to_console(friends_online):
 if __name__ == '__main__':
     login = get_user_login()
     password = get_user_password()
-    print('\nPlease wait. Getting information.')
     try:
         friends_online = get_online_friends(login, password)
     except vk.exceptions.VkAuthError as error:
