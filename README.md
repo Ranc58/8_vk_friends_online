@@ -20,7 +20,7 @@ Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclop
 
 Launching on Linux:
 ```#!bash
-$ python bars.py 
+$ python vk_firends_online.py 
 Please enter login: <Your login>
 Please enter password: <Your password>
 Please wait. Getting information.
